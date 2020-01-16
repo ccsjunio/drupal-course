@@ -78,7 +78,8 @@ class Element {
     $i = 0;
     $sortable = FALSE;
     foreach ($elements as $key => $value) {
-      if ($key === '' || $key[0] !== '#') {
+      //modified by carlos ferraz
+      if ($key === '' || mb_substr($key, 0, 1, 'utf-8') !== '#') {
         if (is_array($value)) {
           if (isset($value['#weight'])) {
             $weight = $value['#weight'];
