@@ -2,8 +2,8 @@ base:
   js:
     dist/scripts/js/script.min.js: {}
   css:
-      theme:
-        dist/css/custom_theme.css: {}
+    theme:
+      dist/css/custom_theme.css: {}
   dependencies:
   - core/modernizr
   - core/jquery
